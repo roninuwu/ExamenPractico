@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomActivity">
+
+    <EditText
+        android:id="@+id/editTextCustomFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Primer Parcial"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextCustomSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Segundo Parcial"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/editTextCustomFirst"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnCustomCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Promedio"
+        android:layout_below="@id/editTextCustomSecond"
+        android:layout_marginTop="20dp"
+        android:onClick="customCalculateAverage"/>
+
+    <TextView
+        android:id="@+id/textViewCustomResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCustomCalculate"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textSize="18sp"/>
+
+</RelativeLayout>
